@@ -3,40 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Searchable List</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-        input {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            font-size: 16px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            padding: 8px;
-            border-bottom: 1px solid #ddd;
-        }
-    </style>
+    <title>Game Start</title>
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <h2>Searchable List</h2>
-    <input type="text" id="searchBar" onkeyup="filterList()" placeholder="Search items...">
-    <ul id="itemList">
-        <li>Amina</li>
-        <li>Nezar</li>
-        <li>Saffana</li>
-        <li>Maryam</li>
-        <li>Yassine</li>
-        <li>Abraham</li>
-    </ul>
+    <div>
+        <img src="../image/Logo.svg" alt="Logo" />
+        <br>
+        <input id="input" type="text" placeholder="Type your name here..." required>
+        <br>
+        <button id="playbutton" onclick="window.location.href='../gamepagina/game.html';">Play!</button>
+        <br>
+        <button id="leaderboard" onclick="window.location.href='../gamepagina/leaderboard.html';">Leaderboard</button>
+        <br>
+        <button id="howtoplay" onclick="window.location.href='../gamepagina/howtoplay.html';">How to play?</button>
+    </div>    
 </body>
 </html>
