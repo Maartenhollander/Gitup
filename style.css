@@ -1,35 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap');
 body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: #ffe6f2;
-    color: #d63384;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    font-family:monospace;
+}
+div {
     text-align: center;
 }
 input {
-    width: 80%;
+    width: 60%;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
     padding: 10px;
-    margin-bottom: 20px;
+    margin: 10px;
     font-size: 16px;
-    border: 2px solid #ff66b2;
-    border-radius: 8px;
     outline: none;
-    background-color: #fff0f5;
-    color: #d63384;
+    text-align: center;
+    border-top: 1px dotted white;
+    border-bottom: 1px dotted white;
 }
-ul {
+button {
+    width: 60%;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 18px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+button {
+    width: 60%;
+    border: none;
+    background-color:bl;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    font-family: monospace;
+    border-top: 1px dotted white;
+    border-bottom: 1px dotted white;
+  }
+button:hover {
+    background-color: 4d4d4d;
+    color: black;
+    transform: scale(1.1);
+}
+#playbutton{
+color:#2ddb01;
+}
+#leaderboard{
+color: #ffff00;
+}
+#howtoplay{
+color: #ff00ff;
+}
+#quit{
+color:red
+}
+.sidebar {
+    height: 100vh;
+    width: 30%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    color: white;
+}
+.menu {
     list-style-type: none;
     padding: 0;
-    max-width: 400px;
-    margin: 0 auto;
-    background: #ffb3d9;
-    border-radius: 10px;
-    padding: 10px;
+    width: 100%;
 }
-li {
-    padding: 10px;
-    border-bottom: 1px solid #ff66b2;
-    font-weight: bold;
+
+.menu li {
+    width: 100%;
 }
-li:last-child {
-    border-bottom: none;
+.menu a {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #34495e;
 }
